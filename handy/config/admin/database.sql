@@ -1,14 +1,14 @@
 
--- ŠÇ—Ò—pƒe[ƒuƒ‹
+-- ã‚¢ãƒ‰ãƒŸãƒ³ç”¨ãƒ†ãƒ¼ãƒ–ãƒ«
 DROP TABLE IF EXISTS admin_users;
 CREATE TABLE admin_users (
-  admin_user_id varbinary(64) NOT NULL COMMENT 'ŠÇ—Ò‚ÌID',
-  password varbinary(255) NOT NULL COMMENT 'ŠÇ—Ò‚ÌƒpƒXƒ[ƒh',
+  admin_user_id varbinary(64) NOT NULL COMMENT 'adminã®ID',
+  password varbinary(255) NOT NULL COMMENT 'adminã®ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰',
   PRIMARY KEY (`admin_user_id`)
 )CHARACTER SET 'utf8mb4'
 , ENGINE=InnoDB
-, COMMENT='‚PƒŒƒR[ƒh‚ª‚PŠÇ—Ò‚ğˆÓ–¡‚·‚éƒe[ƒuƒ‹';
--- ƒ_ƒ~[‚ÌŠÇ—Ò
+, COMMENT='ï¼‘ãƒ¬ã‚³ãƒ¼ãƒ‰ãŒï¼‘adminã‚’æ„å‘³ã™ã‚‹ãƒ†ãƒ¼ãƒ–ãƒ«';
+-- ãƒ€ãƒŸãƒ¼ã®admin
 INSERT INTO admin_users(admin_user_id, password)
   VALUES('admin', '$2y$10$/mAKC8fesgijPeG8juIDre5WDEmvrq6DWCwpfsjeIRZCv.e.1D8zq');
 

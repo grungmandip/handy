@@ -1,0 +1,17 @@
+user login vayo
+customers table on database vayo
+tachige page bata data database ma save garna try gardai bichhama chodeko aawastha
+
+
+2017/08/10
+
+tachiage page bata database ma data save sucessfull
+
+
+
+2017/08/23
+
+ー立ち上げの時　SELECTEDテーブル　そのままついて来るように直す
+ー席転宅機能つける
+ー使用ボタンを直す（データベースにデータ登録はQRボタンからなっている
+ー

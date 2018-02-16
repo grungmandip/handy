@@ -1,0 +1,19 @@
+﻿note::::
+
+button (input ra normal button) same but submit ko kam garirako
+button chai QR tesaile 使用button lai submit ma 
+change gardiyo vane kam tamam
+
+
+
+
+http://dev2.m-fr.net/maharajan/myproj/handy/handy.php?seat=1
+
+http://qiita.com/ma_me/items/03aaebb5dc440b380244
+
+var val = getUrlVars();
+console.log(val[seat])   -> 1と表示されます
+
+http://js.studio-kingdom.com/jquery/attributes/val
+$(".table-selector").val("客席1")
+

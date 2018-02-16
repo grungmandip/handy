@@ -1,5 +1,5 @@
 <?php
-// dbh.php
+
 require_once('db_config.php');
 // DB用関数
 // ----------------------------

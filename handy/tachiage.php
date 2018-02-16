@@ -1,6 +1,7 @@
 <?php
-
 require_once( __DIR__ . '/init.php');
+require_once( __DIR__ . '/user/init_auth.php');
+include('./library/head.php');
 
 //getting insert items
 if (true === isset($_SESSION['buffer']['input'])) {
@@ -27,12 +28,10 @@ unset($_SESSION['buffer']);
 
 //giving address to template
 $smarty_obj->assign('input',  $input);
+$smarty_obj->assign('seat',  $_GET['seat']); // XXX
 $smarty_obj->assign('error_detail_count', count($error_detail));
 $smarty_obj->assign('error_detail',  $error_detail); // エラー全般
 
-
-// showing in template 
+//templateをdisplayする
 error_reporting(E_ALL & ~E_NOTICE);
-$smarty_obj->display('inquiry_food.tpl');
-
-?>
+$smarty_obj->display('tachiage.tpl');

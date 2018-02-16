@@ -1,46 +1,192 @@
-
-
-
-
-*{
-margin:0;padding:0;
-}
-
-
+/*css*/
+@charset "UTF-8";
 body {
-    background-color: lightblue;
-		margin:50px 0px; padding:0px;
-    text-align:center;
-    align:center;
+	margin: 0;
+	padding: 0;
+	text-align:center !important;
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF !important;
 }
 
-.form {
-    display: inline-block;
-    text-align: center;
-    }
-
-.blueButton{
-background-color:rgba(40,80,120,1);
-color:#FFF;
-border-radius:2px;
-padding:0px 10px;
-height:40px;line-height:40px;
-border:1px solid black;
-outline:none;
-
-}
-.blueButton:hover{
-box-shadow:inset 0px 0px 250px 0px rgba(0,0,0,.15);
-}
-.blueButton:active{
-box-shadow:inset 0px 0px 250px 0px rgba(0,0,0,.3);
+.myheader {
+	width:100% !important;
+	height:70px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	background-color:#6495ed;
+	text-align: center;
+	vertical-align: middle;
+	}
+.handy {
+	padding-top: 13px;
 }
 
-.btn-group{
-	border:1px solid black;
+.myfooter {
+	display: inline-block;
+	margin: 80px;
+	font-size: 18px;
 }
-.btn-group a{
- display:block;
-float:left;
+
+.mycontainer {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	font-size: 45px;
 }
+
+.qr {
+	float: right;
+	clear:right;
+}
+
+.mybox {
+	background: #E6E6FA;
+	padding: 15px;
+	border-top: 0;
+	width: 550px;
+	margin: 25px auto;
+	font-size: 30px;
+}
+.sub-box {
+	display: inline-block;
+	width:80%;
+}
+
+.main_title {
+	margin: 30px auto;
+	border-radius: 20px;
+	background: #6495ed;
+	padding: 10px;
+	width: 70%
+}
+.sub_title {
+	border-radius: 20px;
+	background: #6495ed;
+	padding: 5px;
+	font-size: 28px;
+}
+
+.myform {
+	margin:30px auto;
+	border-radius: 5px;
+	width: 500px;
+	display: block;
+	padding-top: 5px;
+	font-size: 20px;
+}
+.login_form {
+	margin: 30px auto;
+	background-color: #bfbff2;
+	border-radius: 5px;
+	width: 500px;
+	display: block;
+	padding-top: 20px;
+	font-size: 25px;
+}
+
+//admin screen
+.grid-me {
+	display: inline-grid;
+	grid-template-columns: auto;
+	padding: 10px;
+	width: 520px;
+}
+/*seat screen*/
+.grid-seat {
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	padding: 20px;
+}
+
+.grid_mymenu {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 20px;
+}
+.grided {
+	padding: 5px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.grided a:link {
+	text-decoration: none;
+}
+.myhover {
+	color: #bfbff2;
+	background-color: #007bff;
+	border-radius: 15px;
+	width: 275px;
+	display: inline-block;
+}
+
+.mytable {
+	font-size: 14px;
+	width: 70vw;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.mytable th {
+	text-align: center;
+}
+label {
+	width: 70%;
+}
+input {
+	height: 50px;
+}
+
+.sp-only {
+	display: none;
+}
+
+/* responsive*/
+@media screen and (max-width: 768px) {
+	.pc-only {
+		display: none;
+	}
+
+	.sp-only {
+		display: flex;
+	}
+
+	.mybox {
+		margin:0 auto;
+		width:100%;
+	}
+
+	.myform {
+		width: 75vw;
+		margin: 30px auto;
+	}
+	.login_form {
+		width: 85vw;
+		font-size: 22px;
+	}
+
+	.main_title h2 {
+		font-size: 6.4vw;
+	}
+	.sub_title {
+		font-size: 4vw;
+	}
+
+/*admin screen*/
+	.grid-me {
+		font-size: 10vw;
+	}
+/*seat screen*/
+	.grid-seat {
+		font-size: 10vw;
+	}
+/*menu screen*/
+	.grid-mymenu {
+	width: 75vw;
+	}
+
+	.mytable {
+		width: 100%;
+	}
+}
+
 

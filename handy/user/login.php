@@ -2,7 +2,7 @@
 
 //Common error handling
 function error() {
-   header('Location: ./index.php');
+   header('Location: index.php');
 
    exit;
 }
@@ -18,7 +18,7 @@ require_once( __DIR__ . '/../config/udb.php');
 //getting id and password from screen
 $id = (string)@$_POST['id'];
 $pw = (string)@$_POST['pw'];
-var_dump($id, $pw);
+//var_dump($id, $pw);
 
 //validating
 if ( ('' === $id)||('' === $pw)) {
@@ -29,7 +29,7 @@ if ( ('' === $id)||('' === $pw)) {
 //getting id and password from DB
 //handling DB
 $dbh = get_dbh();
-var_dump($dbh);
+//var_dump($dbh);
 //preparing statement
 $sql = 'SELECT * FROM users WHERE user_id=:user_id';
 $pre = $dbh->prepare($sql);
@@ -39,7 +39,7 @@ $pre->bindValue(':user_id', $id);
 
 //running
 $r = $pre->execute();
-var_dump($r);
+//var_dump($r);
 
 if (false === $r) {
    echo 'Are you user?!!!!';
@@ -49,7 +49,7 @@ if (false === $r) {
 
 //fetching data
 $user = $pre->fetch(PDO::FETCH_ASSOC);
-var_dump($user);
+//var_dump($user);exit;
 if (false === $user) {
    error();
 }
@@ -68,6 +68,6 @@ $_SESSION['auth']['user_id'] = $id;
 echo 'ok';
 
 //after login
-header('Location: ./top.php');
+header('Location: top.php');
 
 ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-19 17:07:34
+/* Smarty version 3.1.30, created on 2017-12-16 16:32:39
   from "/var/www/html/maharajan/myproj/smarty/templates/handy.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596f1346900138_49276293',
+  'unifunc' => 'content_5a34cc17cc4348_30618284',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '12e33fe2e57ba4e58e2b78e18590b5bc36b78af6' => 
     array (
       0 => '/var/www/html/maharajan/myproj/smarty/templates/handy.tpl',
-      1 => 1500451447,
+      1 => 1513409555,
       2 => 'file',
     ),
   ),
@@ -20,79 +20,72 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596f1346900138_49276293 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a34cc17cc4348_30618284 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ハンディ</title>
-	<?php echo '<script'; ?>
- src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><?php echo '</script'; ?>
->
-
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--> 
-</head>
-<link rel="stylesheet" type="text/css" href="style/handy.css">
-
-<body>
 
 <style>
-
-
-
-.on{
-background-color:red;
-
-}
-
+.on
+	{
+		background-color:red;
+	}
 </style>
-
-<?php echo '<?php ';?>include('library/head.php');<?php echo '?>';?>
-
-<form id=form action="input.php" method="post">
-
-<div class="form">
-<table>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席1</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席A</button>
-	</a></td></tr>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席2</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席B</button>
-	</a></td></tr>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席3</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席C</button>
-	</a></td></tr>
-
-</table>
+<div class="mycontainer">
+	<div class="mybox">
+		<form class="myform" action="input.php" method="post">
+			<div class="grid-seat">
+				<div class="grided">
+					<a href="tachiage.php?seat=1">
+						<button type="button" class="btn btn-primary btn-lg" >空席1 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<span><a href="tachiage.php?seat=a">
+						<button type="button" class="btn btn-primary btn-lg" >空席A </button>
+					</a></span>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=2">
+						<button type="button" class="btn btn-primary btn-lg" >空席2 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=b">
+						<button type="button" class="btn btn-primary btn-lg" >空席B </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=3">
+						<button type="button" class="btn btn-primary btn-lg" >空席3 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=c">
+						<button type="button" class="btn btn-primary btn-lg" >空席C </button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<a href="user/user_logout.php"><button class="btn btn-primary btn-lg">ログアウト</button></a>
+	</form>
 </div>
 
 <?php echo '<script'; ?>
 >
-$(".btn").on("click",function(){
-$(this).toggleClass("on");
+	$(".btn").on("click",function(){
+	$(this).toggleClass("on");
+	$(this).css('background','red');
 
 
-});
+	});
 
-function call(type){
-console.log(type+" called");
+	function call(type){
+	console.log(type+" called");
 
-}
+	}
 
 
 <?php echo '</script'; ?>
 >
-
-</body>
-</html>
 <?php }
 }

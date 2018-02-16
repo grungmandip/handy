@@ -1,68 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>ハンディ</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--> 
-</head>
-<link rel="stylesheet" type="text/css" href="style/handy.css">
-
-<body>
 
 <style>
-
-
-
-.on{
-background-color:red;
-
-}
-
+.on
+	{
+		background-color:red;
+	}
 </style>
-
-<?php include('library/head.php');?>
-
-<form id=form action="input.php" method="post">
-
-<div class="form">
-<table>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席1</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席A</button>
-	</a></td></tr>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席2</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席B</button>
-	</a></td></tr>
-	 <tr><td><a href="input.php">
-	  <button type="button" class="blueButton btn" >空席3</button>
-	</a></td>
-	     <td><a href="input.php">
-	  <button type="button" class="blueButton btn">空席C</button>
-	</a></td></tr>
-
-</table>
+<div class="mycontainer">
+	<div class="mybox">
+		<form class="myform" action="input.php" method="post">
+			<div class="grid-seat">
+				<div class="grided">
+					<a href="tachiage.php?seat=1">
+						<button type="button" class="btn btn-primary btn-lg" >空席1 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<span><a href="tachiage.php?seat=a">
+						<button type="button" class="btn btn-primary btn-lg" >空席A </button>
+					</a></span>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=2">
+						<button type="button" class="btn btn-primary btn-lg" >空席2 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=b">
+						<button type="button" class="btn btn-primary btn-lg" >空席B </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=3">
+						<button type="button" class="btn btn-primary btn-lg" >空席3 </button>
+					</a>
+				</div>
+				<div class="grided">
+					<a href="tachiage.php?seat=c">
+						<button type="button" class="btn btn-primary btn-lg" >空席C </button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<a href="user/user_logout.php"><button class="btn btn-primary btn-lg">ログアウト</button></a>
+	</form>
 </div>
 
 <script>
-$(".btn").on("click",function(){
-$(this).toggleClass("on");
+	$(".btn").on("click",function(){
+	$(this).toggleClass("on");
+	$(this).css('background','red');
 
 
-});
+	});
 
-function call(type){
-console.log(type+" called");
+	function call(type){
+	console.log(type+" called");
 
-}
+	}
 
 
 </script>
-
-</body>
-</html>

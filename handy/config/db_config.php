@@ -2,9 +2,9 @@
 
 function db_config() {
 	return array(
-	'user' => 'tech',
-	'database' => 'tech',
-	'pass' => 'tech',
+	'user' => 'maharajan',
+	'database' => 'maharajan',
+	'pass' => 'maharajan',
 	'host' => 'localhost',
 	'charset' => 'utf8mb4',
 	);
